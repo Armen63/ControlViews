@@ -102,37 +102,43 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="15sp">
+
         <RadioGroup
             android:id="@+id/radioGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_centerHorizontal="true">
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
             <RadioButton
                 android:id="@+id/radioButton1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/divide_by_2"/>
+                android:text="@string/divide_by_2" />
+
             <RadioButton
                 android:id="@+id/radioButton2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/divide_by_4"/>
+                android:text="@string/divide_by_4" />
+
             <RadioButton
                 android:id="@+id/radioButton3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Divide by 8"/>
+                android:text="Divide by 8" />
         </RadioGroup>
+
         <Button
             android:id="@+id/radioButtonClear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_margin="35dp"
+            android:layout_centerHorizontal="true"
             android:text="@string/clear_radio_button_selection" />
     </RelativeLayout>
 

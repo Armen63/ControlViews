@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         toggleButton2.setOnClickListener(this);
         toggleButton3.setOnClickListener(this);
         toggleButton4.setOnClickListener(this);
-        radioGroup.setOnClickListener(this);
+        radioButtonClear.setOnClickListener(this);
         switch1.setOnCheckedChangeListener(this);
         switch2.setOnCheckedChangeListener(this);
         switch3.setOnCheckedChangeListener(this);
@@ -137,6 +137,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     textViewProgressBar.setText("Progress: " + progressBar.getProgress());
                 }
                 break;
+            case R.id.radioButtonClear:
+                radioButton1.setChecked(false);
+                radioButton2.setChecked(false);
+                radioButton3.setChecked(false);
+                break;
         }
     }
 
@@ -159,7 +164,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
-        Log.d("aa", "aa");
         switch (checkedId) {
             case R.id.radioButton1:
                 progressBar.setProgress(progressBar.getProgress() / 2);
@@ -173,12 +177,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 progressBar.setProgress(progressBar.getProgress() / 8);
                 textViewProgressBar.setText("Progress: " + progressBar.getProgress());
                 break;
-            case R.id.radioButtonClear:
-                radioButton1.setChecked(false);
-                radioButton2.setChecked(false);
-                radioButton3.setChecked(false);
-                break;
-
         }
     }
 
