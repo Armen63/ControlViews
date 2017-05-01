@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.controlviews.MainActivity"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <ProgressBar
+             android:id="@+id/progressBar"
+             android:layout_width="280dp"
+             android:layout_height="wrap_content"
+             style="?android:attr/progressBarStyleHorizontal"
+             android:max="1000"
+             android:progress="100"
+             />
+    <EditText
+        style="@style/maxValue"
+        android:id="@+id/inputProgress"
+        android:layout_toRightOf="@+id/progressBar"
+        />
+    <TextView
+        android:id="@+id/textProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progress: 120"
+        android:layout_below="@+id/progressBar"/>
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp">
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="20"/>
+    <EditText
+        style="@style/maxValue"
+        android:id="@+id/inputSeek"
+        android:layout_toRightOf="@+id/seekBar"
+        />
+    <TextView
+        android:id="@+id/textSeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBar"
+        android:text="@string/seekbar"/>
+</RelativeLayout>
+
+
+    <CheckBox
+        android:layout_marginTop="15dp"
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enable_toggles" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        >
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:textOn="@string/_2x_on"
+            android:textOff="@string/_2x_off"
+            style="@style/toggleButton"
+
+            />
+        <ToggleButton
+            android:id="@+id/toggleButton2"
+            android:textOn="@string/_4x_on"
+            android:textOff="@string/_4x_off"
+            android:layout_toRightOf="@+id/toggleButton1"
+            style="@style/toggleButton"
+            />
+        <ToggleButton
+            android:id="@+id/toggleButton3"
+            android:textOn="@string/_6x_on"
+            android:textOff="@string/_6x_off"
+            android:layout_toRightOf="@id/toggleButton2"
+            style="@style/toggleButton"
+            />
+        <ToggleButton
+            android:id="@+id/toggleButton4"
+            android:layout_toRightOf="@+id/toggleButton3"
+            android:textOn="@string/_8x_on"
+            android:textOff="@string/_8x_off"
+            style="@style/toggleButton"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15sp">
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/divide_by_2"/>
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/divide_by_4"/>
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Divide by 8"/>
+        </RadioGroup>
+        <Button
+            android:id="@+id/radioButtonClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="35dp"
+            android:text="@string/clear_radio_button_selection" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_10_to_progress"/>
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_20_to_progress"
+                />
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_30_to_progress"/>
+
+            <Switch
+                android:id="@+id/switch3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/save"/>
+        <Button
+            android:id="@+id/load"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/load"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

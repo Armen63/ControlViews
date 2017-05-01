@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ControlViews</string>
+    <string name="max">max</string>
+    <string name="seekbar">Seekbar: </string>
+    <string name="_2x_off">2X OFF</string>
+    <string name="_2x_on">2X ON</string>
+    <string name="_4x_on">4X ON</string>
+    <string name="_4x_off">4X OFF</string>
+    <string name="_6x_on">6X ON</string>
+    <string name="_6x_off">6x off</string>
+    <string name="_8x_on">8x on</string>
+    <string name="_8x_off">8x off</string>
+    <string name="enable_toggles">Enable Toggles</string>
+    <string name="divide_by_2">Divide by 2</string>
+    <string name="divide_by_4">Divide by 4</string>
+    <string name="clear_radio_button_selection">clear radio button selection</string>
+    <string name="add_10_to_progress">Add 10 to progress</string>
+    <string name="add_30_to_progress">Add 30 to progress</string>
+    <string name="add_20_to_progress">Add 20 to progress</string>
+    <string name="save">save</string>
+    <string name="load">load</string>
+</resources>
